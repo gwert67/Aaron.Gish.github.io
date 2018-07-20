@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Home</title>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<style>
+
+
+
+
+div.header{
+	background-image: url(img/header-img.png);
+	width: 100%;
+	height: 150px;
+	float:left;
+	z-index: 2;
+}
+
+.header h1 {
+    font-family: 'Lobster', cursive;
+}
+
+
+
+
+div.sidebar{
+	background-color: black;
+	width: 20%;
+	height: 620px;
+	float:left;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid blue;
+	
+}
+
+
+.footer{
+	background-image: url(img/footer-img.jpg);
+	width: 100%;
+	height: 50px;
+}
+
+
+
+
+
+
+
+
+.right-side{
+	width:40%;
+	background-color: black;
+	height: 620px;
+	float: left;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid red;
+}
+
+
+
+.mySlides {display:none;}
+
+
+
+
+
+div.main-part{
+	float: left;
+	width: 80%;
+}
+
+
+
+#left-side{
+	
+	width: 60%;
+	height: 620px;
+	float: left;	
+}
+
+#left-side img{
+	width: 100%;
+}
+
+
+
+.sidebar ul li:hover{
+	background-color: #00FFEC;
+}
+
+.sidebar ul a{
+	text-decoration: none;
+}
+
+div.footer{
+	background-color: cyan;
+	width: 100%;
+	height: 200px;
+	float: left; 
+	display: block;
+	
+}
+
+
+.sidebar ul li{
+	width: 150px;
+	height:40px;
+	background-color: white;
+	border: 3px solid red;
+	border-radius: 10px;
+	font-size: 24px;
+	list-style: none;
+	margin-top: 40px;
+}
+
+.footer{
+		height:150px;
+}
+
+
+.footer div div{
+	background-color: rgba(68,68,68, 0.7);
+		height:150px;
+}
+
+.footer div{
+	padding: 100px;
+	padding-bottom: 0px;
+	padding-top: 40px;
+		height:150px;
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="header">
+
+	<h1 style="color:red;">GameEzStore</h1>
+
+
+		
+
+</div>
+
+<div class="main-part">
+	
+	<div id="left-side">
+		<img src="http://images.bit-tech.net/content_images/2009/12/the-best-gaming-mouse/intro2-1280x1024.jpg" alt="Gaming Store"  height="620">
+
+		
+	
+	</div>
+
+	
+	<div class="right-side">
+	
+
+
+			<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="http://s.glbimg.com/po/tt/f/original/2013/02/14/taipan-04.png" style="width:100%">
+  <img class="mySlides" src="http://www.qpad.com/uploads/images/Gallery/mk-85/1024x768-MK85-Lightson--closeup-nobackground.png" style="width:
+  90%">
+  <img class="mySlides" src="https://megaport.de/media/catalog/product/cache/1/small_image/720x/9df78eab33525d08d6e5fb8d27136e95/z/9/z9_schraeg_blau_2_8.png" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+	</div>
+
+</div>
+
+<div class="sidebar">
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="headphones.html"><li>Headphones</li></a>
+		<a href="mice.html"><li>Mice</li></a>
+		<a href="pc.html"><li>Pc's</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</div>
+
+
+
+
+<div class="footer">
+	<div>
+		<div>
+		<a href="https://www.instagram.com/aaron_gish/"> 
+	  <img src="https://sguru.org/wp-content/uploads/2018/01/instagram-colourful-icon.png" id="insta" style="width:42px;height:42px;border:0;">
+		</a>
+
+		<a href="">
+		<img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png" alt="Twitter" width="50" height="50" style="">
+	    </a>
+
+
+	    <h2 style="font-size: 16px;text-align: center;color: white;">©Aaron Gish 2018</h2>
+	</div>
+	</div>
+
+ </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
